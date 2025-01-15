@@ -12,7 +12,6 @@ class CharactersListViewModel: CharactersListViewModelProtocol {
         let repository = MarvelRepository()
         Task {
             let characters = try await repository.fetchNewCharacters()
-            print(characters)
         }
     }
 }
