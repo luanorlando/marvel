@@ -7,7 +7,7 @@
 
 import SwiftUICore
 
-protocol CharacterListRowViewDataProtocol {
+protocol CharacterListRowViewDataProtocol: Identifiable {
     var imageUrl: String { get }
     var name: String { get }
 }

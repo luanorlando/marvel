@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct CharacterListView: View {
+    
+    var viewData: CharacterListViewViewDataProtocol
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(viewData.list, id: \.name) {
+            CharacterListRow(
+                viewData: $0
+            )
+        }
     }
 }
 
 #Preview {
-    CharacterListView()
+    CharacterListView(viewData: CharacterListViewViewData())
 }
