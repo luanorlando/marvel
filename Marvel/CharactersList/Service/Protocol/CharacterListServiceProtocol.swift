@@ -5,4 +5,6 @@
 //  Created by Luan Orlando on 22/01/25.
 //
 
-import Foundation
+protocol CharacterListServiceProtocol {
+    func fetchCharacters() async throws -> CharacterListModel
+}

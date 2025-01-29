@@ -12,7 +12,7 @@ struct ContentView: View {
     @State
     var buttonTitle: String = "Clique aqui!"
     
-    let viewModel = CharactersListViewModel()
+    let viewModel = CharactersListViewModel(service: CharacterListService())
     
     var body: some View {
         VStack {
