@@ -12,6 +12,8 @@ struct ContentView: View {
     @State
     var buttonTitle: String = "Clique aqui!"
     
+    let viewModel = CharactersListViewModel(service: CharacterListService())
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,6 +22,7 @@ struct ContentView: View {
             Text("Hello, world!")
             Button(action: {
                 buttonTitle = "Button Clicked"
+                viewModel.fetchCharacters()
             }) {
                 Text(buttonTitle)
             }

@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5A1738DB2CF6371A00B8BB91 /* MarvelRepository in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1738DA2CF6371A00B8BB91 /* MarvelRepository */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5AC89B622CC3465600D37456 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		5AC89B6B2CC3465600D37456 /* MarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5A1738DD2CF6386800B8BB91 /* Exceptions for "Marvel" folder in "Marvel" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5AC89B4F2CC3465500D37456 /* Marvel */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5AC89B522CC3465500D37456 /* Marvel */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5A1738DD2CF6386800B8BB91 /* Exceptions for "Marvel" folder in "Marvel" target */,
+			);
 			path = Marvel;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1738DB2CF6371A00B8BB91 /* MarvelRepository in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,7 @@
 			);
 			name = Marvel;
 			packageProductDependencies = (
+				5A1738DA2CF6371A00B8BB91 /* MarvelRepository */,
 			);
 			productName = Marvel;
 			productReference = 5AC89B502CC3465500D37456 /* Marvel.app */;
@@ -195,6 +214,9 @@
 			);
 			mainGroup = 5AC89B472CC3465500D37456;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5A1738D92CF636F400B8BB91 /* XCLocalSwiftPackageReference "../MarvelRepository" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5AC89B512CC3465500D37456 /* Products */;
 			projectDirPath = "";
@@ -394,6 +416,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Marvel/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Marvel/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -414,10 +437,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.Marvel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -433,6 +457,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Marvel/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Marvel/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -453,10 +478,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.Marvel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
@@ -587,6 +613,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5A1738D92CF636F400B8BB91 /* XCLocalSwiftPackageReference "../MarvelRepository" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../MarvelRepository;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A1738DA2CF6371A00B8BB91 /* MarvelRepository */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MarvelRepository;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5AC89B482CC3465500D37456 /* Project object */;
 }
